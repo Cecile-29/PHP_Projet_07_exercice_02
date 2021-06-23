@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    $_SESSION['prenom'] = 'Ami';
+    $_SESSION['nom'] = 'Kaouet';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +20,6 @@
         </div>
         <div class="row border border-primary rounded p-3 m-4 text-secondary justify-content-center">
             <?php
-            session_start();
-
-            $_SESSION['prenom'] = 'Ami';
-            $_SESSION['nom'] = 'Kaouet';
-
             echo 'Les variables de session  prénom et nom sont L\' '. $_SESSION['prenom']. '  '. $_SESSION['nom'];
             ?> 
         </div>
